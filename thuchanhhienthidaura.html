@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Thuc hanh Hien thi dau ra</title>
+    <title>Hello</title>
 </head>
 <body>
+    <!--hien thi ket qua ham alert-->
+    <button type="button" onclick="showMassage();">Click Me!</button>
+    <script>
+        function showMassage(){
+            alert('Xin chào!');
+        }
+    </script>
+
+    <!--hien thi ket qua su dung the html-->
+    <div id="messageDiv"></div>
+    <button type="button" onclick="dosomething();">Click Me!</button>
+    <script>
+        function dosomething(){
+            document.getElementById("messageDiv").innerHTML='Xin chào';
+        }
+    </script>
+
+    <!--hien thi ket qua ham document.write()-->
+    <button type="button" onclick="showMassage;">Click Me!</button>
+    <script>
+        function showMassage(){
+            alert('Xin chào!');
+        }
+    </script>
 
 </body>
 </html>
